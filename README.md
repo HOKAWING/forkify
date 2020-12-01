@@ -23,3 +23,5 @@ export const limitRecipeTitle = (title, limit = 17) => {
     readStorage() {  
         const storage = JSON.parse(localStorage.getItem('likes'));  
     }
+
+4. Get recipe from external API.  
