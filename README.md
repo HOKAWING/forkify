@@ -16,10 +16,10 @@
 export const limitRecipeTitle = (title, limit = 17) => {  
 
 3. Persist data in localStorage.  
-    persistData() {
-        //保存在内存中，重新刷新页面也存在。
-        localStorage.setItem('likes', JSON.stringify(this.likes));
-    }
-    readStorage() {
-        const storage = JSON.parse(localStorage.getItem('likes'));
+    persistData() {  
+        //保存在内存中，重新刷新页面也存在。  
+        localStorage.setItem('likes', JSON.stringify(this.likes));  
+    }  
+    readStorage() {  
+        const storage = JSON.parse(localStorage.getItem('likes'));  
     }
