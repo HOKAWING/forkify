@@ -18,7 +18,8 @@ export const limitRecipeTitle = (title, limit = 17) => {
 3. Persist data in localStorage.  
     persistData() {  
         //保存在browser sessions中，重新刷新页面或重啟電腦也存在 . 
-        //localStorage is similar to sessionStorage, except that while data stored in localStorage has no expiration time, data stored in sessionStorage gets cleared when the page session ends.  
+        /**  localStorage is similar to sessionStorage, except that while data stored in localStorage has no expiration time, data stored in sessionStorage gets cleared when the page session ends.
+        */  
         localStorage.setItem('likes', JSON.stringify(this.likes));  
     }  
     readStorage() {  
