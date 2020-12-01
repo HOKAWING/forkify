@@ -25,3 +25,11 @@ export const limitRecipeTitle = (title, limit = 17) => {
     }
 
 4. Get recipe from external API.  
+    import axios from 'axios';  
+    const res = await axios(`https://www.food2fork.com/api/get?key=${key}&rId=${this.id}`);  
+    this.title = res.data.recipe.title;  
+    
+5. join array.  
+        const unitsShort = ['tbsp', 'tbsp', 'oz', 'oz', 'tsp', 'tsp', 'cup', 'pound'];  
+        const units = [...unitsShort, 'kg', 'g'];  
+        
